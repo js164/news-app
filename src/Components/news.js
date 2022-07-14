@@ -8,7 +8,7 @@ export default class News extends Component {
     return (
         <div className="col-md-4 my-2" >
         <Card style={{background:this.props.mode === 'dark' ? '#061020' : 'white',color:this.props.mode === 'dark' ? 'white' : 'black',border:"none"}}>
-        <Badge bg="info" style={{width:"fit-content", position:"absolute",right:"-20px",top:"-10px"}}>{this.props.source}</Badge>
+        <Badge bg="info" style={{width:"fit-content", position:"absolute",right:"-10px",top:"-10px"}}>{this.props.source}</Badge>
         <Card.Img variant="top" src={this.props.urlToImage?this.props.urlToImage:"https://images.news18.com/ibnlive/uploads/2022/01/untitled-design-1-108-164329132916x9.png"} />
         <Card.Body>
           <Card.Title>{this.props.title}</Card.Title>
